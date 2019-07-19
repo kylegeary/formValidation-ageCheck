@@ -1,0 +1,11 @@
+{
+  "name": "formvalidation-agechecker",
+  "version": "1.0.0",
+  "description": "An age validation rule for the DEGJS formValidation module.",
+  "main": "src/ageChecker.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Kyle Geary",
+  "license": "ISC"
+}
