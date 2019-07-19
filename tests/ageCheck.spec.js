@@ -43,5 +43,23 @@ describe('Form Validation: ageChecker', () => {
             expect(settings.minAge).toEqual(expectedVal);
 		});
 
+		 it('should overwrite defaults, if values passed in', () => {
+            const newSettings = {
+				minAge: 1,
+				message: 'You must be of age to continue'
+            };
+            const expectedVal = {
+				message: 'You must be of age to continue',
+				messageAttr: 'data-validation-agecheck-message',
+				events: [
+					'focusout',
+					'submit'
+				],
+				minAge: 1
+            };
+
+            const ageCheckInst = ageCheck(newSettings);
+            expect(ageCheckInst.settings).toEqual(expectedVal);
+        });
 	});
 })
