@@ -4,8 +4,20 @@
   "description": "An age validation rule for the DEGJS formValidation module.",
   "main": "src/ageChecker.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "author": "Kyle Geary",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  },
+  "babel": {
+        "presets": [
+            "@babel/preset-env"
+        ]
+    }
 }
